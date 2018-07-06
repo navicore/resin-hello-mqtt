@@ -11,7 +11,7 @@ RUN apt-get update && \
     apt-get -y install git sbt && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/navicore/hello-mqtt.git && cd hello-mqtt && git checkout tags/0.9.1 && sbt assembly
+RUN git clone https://github.com/navicore/hello-mqtt.git && cd hello-mqtt && git checkout tags/0.9.2 && sbt assembly
 
 RUN mkdir -p /app
 
